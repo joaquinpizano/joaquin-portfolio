@@ -1,0 +1,2 @@
+import { profile } from '@/data/portfolio';
+export default function Footer() { return <footer className="shell footer"><a className="footer-name" href="/">Joaquin Pizano<span>.</span></a><span>Curiosity, put into practice.</span><a href={profile.github} target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span></a></footer>; }

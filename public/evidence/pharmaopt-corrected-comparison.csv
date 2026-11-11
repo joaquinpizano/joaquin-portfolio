@@ -1,0 +1,5 @@
+model,outcome,positives,average_precision,roc_auc,top_500_captured,top_1000_captured
+v0.4 corrected (liblinear),All FDA-linked events,96,0.0038970900621604822,0.7751202633693037,10,10
+v0.4 corrected (liblinear),Non-discontinuation candidates,12,0.008358051492529538,0.8044077507838758,6,6
+v0.5 corrected (lbfgs),All FDA-linked events,96,0.0028578304440981584,0.7493057859181331,7,7
+v0.5 corrected (lbfgs),Non-discontinuation candidates,12,0.008407301316034885,0.8035077034129616,6,6
