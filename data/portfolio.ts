@@ -27,7 +27,7 @@ export const projects = [
     technologies: ['Python', 'Data validation', 'FEMA NFIP data'],
     problem: 'A ZIP code does not establish county membership. In ZIP 33708, filtering policy records to confirmed Pinellas geography leaves out records with missing geographic identifiers. That affects the coverage of any analysis built on the filtered data.',
     importance: 'Before drawing conclusions about exposure, the records need to reconcile. Understanding what is included, what is excluded, and why is part of the analytical result.',
-    approach: 'I investigated 2024 effective-year FEMA NFIP policy records for Florida ZIP 33708, using the September 8, 2026 source snapshot. The audit compares ZIP-only records with the Pinellas census GEOID prefix 12103, reconciles record IDs and policyCount totals, and explicitly classifies missing, outside-county, and malformed geography.',
+    approach: 'I used Python-based data analysis to investigate 2024 effective-year FEMA NFIP public records for Florida ZIP 33708, using the September 8, 2026 source snapshot. The workflow validates geographic identifiers against the Pinellas census GEOID prefix 12103, reconciles record IDs and policyCount totals, and explicitly classifies missing, outside-county, and malformed geography. Documented exposure methodology and data-quality limitations explain what the resulting measures can support and where interpretation remains constrained.',
     status: '2024 effective-year audit · ZIP 33708',
     live: null, repository: 'https://github.com/joaquinpizano/RiskMap',
   },
