@@ -29,7 +29,7 @@ export const projects = [
     importance: 'FEMA flood-hazard geography describes mapped context; historical NFIP claims and reported payments record observed past losses; provisional insured exposure summarizes policy coverage over time under explicit assumptions. None of these measures establishes an individual property’s current or future risk.',
     approach: 'RiskMap v2 brings these three complementary but non-interchangeable views together: FEMA flood-hazard geography for mapped context, historical NFIP claims and reported payments for observed loss history, and a provisional insured-exposure sensitivity based on policy terms and time-weighted policy counts. Separately, I used Python to audit 2024 effective-year FEMA NFIP records for Florida ZIP 33708 against the Pinellas census GEOID prefix 12103, reconciling record IDs and policyCount totals while classifying missing, outside-county, and malformed geography. Missing GEOIDs do not establish county membership, and the duration-based exposure remains provisional with documented cancellation-date exceptions. RiskMap does not make property-level predictions, estimate claim rates, or determine insurance pricing.',
     status: 'RiskMap v2 · historical claims, mapped hazard & provisional exposure',
-    live: null, repository: 'https://github.com/joaquinpizano/RiskMap',
+    live: 'https://riskmap-vtvvsxoqbp9nxxwal4rjkh.streamlit.app/', repository: 'https://github.com/joaquinpizano/RiskMap',
   },
   {
     slug: 'pharmaopt', name: 'PharmaOpt', number: '02', category: 'HEALTHCARE · SUPPLY ANALYTICS',
