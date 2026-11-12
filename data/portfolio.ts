@@ -21,14 +21,14 @@ export const pharmaStudy = {
 };
 export const projects = [
   {
-    slug: 'riskmap', name: 'RiskMap', number: '01', category: 'INSURANCE · RISK ANALYTICS',
-    headline: 'Understanding exposure starts with understanding the data.',
-    summary: 'A FEMA NFIP policy audit examining geographic coverage, source-field reconciliation, and the limits of exposure analysis.',
-    technologies: ['Python', 'Data validation', 'FEMA NFIP data'],
-    problem: 'A ZIP code does not establish county membership. In ZIP 33708, filtering policy records to confirmed Pinellas geography leaves out records with missing geographic identifiers. That affects the coverage of any analysis built on the filtered data.',
-    importance: 'Before drawing conclusions about exposure, the records need to reconcile. Understanding what is included, what is excluded, and why is part of the analytical result.',
-    approach: 'I used Python-based data analysis to investigate 2024 effective-year FEMA NFIP public records for Florida ZIP 33708, using the September 8, 2026 source snapshot. The workflow validates geographic identifiers against the Pinellas census GEOID prefix 12103, reconciles record IDs and policyCount totals, and explicitly classifies missing, outside-county, and malformed geography. Documented exposure methodology and data-quality limitations explain what the resulting measures can support and where interpretation remains constrained.',
-    status: '2024 effective-year audit · ZIP 33708',
+    slug: 'riskmap', name: 'RiskMap | Flood Risk & Insurance Analytics', number: '01', category: 'INSURANCE · RISK ANALYTICS',
+    headline: 'Three views, kept distinct: mapped hazard, observed claims, provisional exposure.',
+    summary: 'RiskMap v2 distinguishes FEMA flood-hazard maps as geographic context, historical NFIP claims as observed losses, and provisional insured exposure as a policy-term measure—not property-level predictions or insurance pricing.',
+    technologies: ['Python', 'Historical NFIP claims', 'FEMA flood-hazard geography', 'Data validation'],
+    problem: 'Mapped flood hazard, historical claims, and insured exposure answer different questions. Combining them without distinction could confuse geographic hazard context with observed past losses or provisional policy coverage.',
+    importance: 'FEMA flood-hazard geography describes mapped context; historical NFIP claims and reported payments record observed past losses; provisional insured exposure summarizes policy coverage over time under explicit assumptions. None of these measures establishes an individual property’s current or future risk.',
+    approach: 'RiskMap v2 brings these three complementary but non-interchangeable views together: FEMA flood-hazard geography for mapped context, historical NFIP claims and reported payments for observed loss history, and a provisional insured-exposure sensitivity based on policy terms and time-weighted policy counts. Separately, I used Python to audit 2024 effective-year FEMA NFIP records for Florida ZIP 33708 against the Pinellas census GEOID prefix 12103, reconciling record IDs and policyCount totals while classifying missing, outside-county, and malformed geography. Missing GEOIDs do not establish county membership, and the duration-based exposure remains provisional with documented cancellation-date exceptions. RiskMap does not make property-level predictions, estimate claim rates, or determine insurance pricing.',
+    status: 'RiskMap v2 · historical claims, mapped hazard & provisional exposure',
     live: null, repository: 'https://github.com/joaquinpizano/RiskMap',
   },
   {
